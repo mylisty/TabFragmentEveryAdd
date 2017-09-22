@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.liandongfenqi.tongniu.tabfragmenteveryadd.MainActivity">
+    <LinearLayout
+        android:id="@+id/ll"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button"
+            android:text="fragment1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/buttoon2"
+            android:text="fragment1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/button3"
+            android:text="fragment1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <com.liandongfenqi.tongniu.tabfragmenteveryadd.NoScrollViewPager
+        android:id="@+id/viewpger"
+        android:layout_below="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.liandongfenqi.tongniu.tabfragmenteveryadd.NoScrollViewPager>
+
+</RelativeLayout>

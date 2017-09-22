@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:indicator_drawable_selected="@drawable/shape_error"
+        app:indicator_drawable_unselected="@drawable/shape_blue"
+        app:indicator_width="10dp"
+        app:indicator_height="10dp"
+        app:title_textcolor="@color/colorAccent"/>
+
+    <RadioGroup
+        android:id="@+id/rg_first"
+        style="@style/rg_style"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:button="@null"
+            android:background="@drawable/radio"
+            android:id="@+id/pay_issue"
+            style="@style/rg_rb_style"
+            android:text="aa" />
+
+        <RadioButton
+            android:background="@drawable/radio"
+            android:button="@null"
+            android:id="@+id/cannot_play"
+            style="@style/rg_rb_style"
+            android:text="bb" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rg_second"
+        style="@style/rg_style"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/force_closure"
+            style="@style/rg_rb_style"
+            android:text="xxx" />
+
+        <RadioButton
+            android:id="@+id/play_pause"
+            style="@style/rg_rb_style"
+            android:text="dd" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rg_third"
+        style="@style/rg_style"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/other_issues"
+            style="@style/rg_rb_style"
+            android:text="ee" />
+    </RadioGroup>
+
+    <!--  <RadioButton
+          android:id="@+id/radioButton"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="RadioButton" />
+
+      <RadioButton
+          android:id="@+id/radioButton2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="RadioButton" />
+      -->
+
+    <TextView
+        android:id="@+id/textview"
+        android:gravity="center"
+        android:text="aaaaaa"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

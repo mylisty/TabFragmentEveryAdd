@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ezy.ui.view.BannerView
+        android:id="@+id/banner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:bvAspectRatio="0.6666666"
+        app:bvIndicatorColor="#cccccc"
+        app:bvIndicatorColorSelected="@color/colorAccent" />
+
+    <com.liandongfenqi.tongniu.tabfragmenteveryadd.MyScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/iamge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/ic_launcher"
+                    android:scaleType="centerCrop" />
+
+                <include
+                    android:id="@+id/buy"
+                    layout="@layout/buy_layout" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/ic_launcher"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/ic_launcher"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:background="@mipmap/ic_launcher"
+                    android:scaleType="centerCrop" />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/top_buy_layout"
+                layout="@layout/buy_layout" />
+        </FrameLayout>
+    </com.liandongfenqi.tongniu.tabfragmenteveryadd.MyScrollView>
+
+</LinearLayout>
