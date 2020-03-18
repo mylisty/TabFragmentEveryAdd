@@ -12,7 +12,7 @@ import com.bumptech.glide.Glide;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import ezy.ui.view.BannerView;
 
 /**
@@ -22,17 +22,17 @@ import ezy.ui.view.BannerView;
 public class Fragment1 extends LazyLoadFragment  {
 
 
-    @Bind(R.id.iamge)
+    @BindView(R.id.iamge)
     ImageView iamge;
-    @Bind(R.id.scrollView)
+    @BindView(R.id.scrollView)
     MyScrollView scrollView;
-    @Bind(R.id.parent_layout)
+    @BindView(R.id.parent_layout)
     LinearLayout parentLayout;
-    @Bind(R.id.buy)
+    @BindView(R.id.buy)
     LinearLayout mBuyLayout;
-    @Bind(R.id.top_buy_layout)
+    @BindView(R.id.top_buy_layout)
     LinearLayout mTopBuyLayout;
-    @Bind(R.id.banner1)
+    @BindView(R.id.banner1)
     BannerView banner1;
 /*    private val imageUrls = arrayOf("http://img.taodiantong.cn/v55183/infoimg/2013-07/130720115322ky.jpg",
             "http://pic30.nipic.com/20130626/8174275_085522448172_2.jpg",
@@ -52,12 +52,12 @@ public class Fragment1 extends LazyLoadFragment  {
             "全职猎人",
     };
     public static String[] urls = new String[]{//750x500
-            "http://img.taodiantong.cn/v55183/infoimg/2013-07/130720115322ky.jpg",
-            "http://img.taodiantong.cn/v55183/infoimg/2013-07/130720115322ky.jpg",
             "http://s18.mogucdn.com/p2/170122/upload_66g1g3h491bj9kfb6ggd3i1j4c7be_750x500.jpg",
-            "http://pic18.nipic.com/20111215/577405_080531548148_2.jpg",
-            "http://pic18.nipic.com/20111215/577405_080531548148_2.jpg",
-            "http://s16.mogucdn.com/p2/170206/upload_1759d25k9a3djeb125a5bcg0c43eg_750x500.jpg"
+            "http://s18.mogucdn.com/p2/170122/upload_66g1g3h491bj9kfb6ggd3i1j4c7be_750x500.jpg",
+            "http://s18.mogucdn.com/p2/170122/upload_66g1g3h491bj9kfb6ggd3i1j4c7be_750x500.jpg",
+            "http://s18.mogucdn.com/p2/170122/upload_66g1g3h491bj9kfb6ggd3i1j4c7be_750x500.jpg",
+            "http://s18.mogucdn.com/p2/170122/upload_66g1g3h491bj9kfb6ggd3i1j4c7be_750x500.jpg",
+            "http://s18.mogucdn.com/p2/170122/upload_66g1g3h491bj9kfb6ggd3i1j4c7be_750x500.jpg"
     };
     public static class BannerItem {
         public String image;

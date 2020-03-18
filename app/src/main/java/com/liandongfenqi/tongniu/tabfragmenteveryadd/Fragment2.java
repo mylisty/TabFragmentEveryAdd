@@ -19,7 +19,7 @@ import com.youth.banner.loader.ImageLoaderInterface;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -27,7 +27,7 @@ import butterknife.ButterKnife;
  */
 
 public class Fragment2 extends LazyLoadFragment {
-    @Bind(R.id.textview)
+    @BindView(R.id.textview)
     TextView textview;
 
     @Override
@@ -135,19 +135,5 @@ public class Fragment2 extends LazyLoadFragment {
     @Override
     protected void stopLoad() {
         Log.d(TAG, "Fragment2" + "已经对用户不可见，可以停止加载数据");
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        // TODO: inflate a fragment view
-        View rootView = super.onCreateView(inflater, container, savedInstanceState);
-        ButterKnife.bind(this, rootView);
-        return rootView;
-    }
-
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        ButterKnife.unbind(this);
     }
 }

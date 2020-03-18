@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
@@ -20,6 +20,7 @@ import com.youth.banner.listener.OnBannerListener;
 import com.youth.banner.loader.ImageLoaderInterface;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -43,10 +44,7 @@ public class SplashActivity extends Activity {
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_splash);
         StatusBarCompat.compat(this);
-        List<String> list = new ArrayList<>();
-        for (int i = 0; i < urls.length; i++) {
-            list.add(urls[i]);
-        }
+        List<String> list = new ArrayList<>(Arrays.asList(urls));
         Banner banner = (Banner) findViewById(R.id.banner);
         //设置banner样式
       //  banner.setBannerStyle(BannerConfig.CIRCLE_INDICATOR_TITLE);

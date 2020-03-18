@@ -1,12 +1,11 @@
 package com.liandongfenqi.tongniu.tabfragmenteveryadd.activity;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import android.widget.ViewFlipper;
 
 import com.liandongfenqi.tongniu.tabfragmenteveryadd.R;
-import com.liandongfenqi.tongniu.tabfragmenteveryadd.utils.StatusBarCompat;
 
 import tv.danmaku.ijk.media.player.IjkMediaPlayer;
 

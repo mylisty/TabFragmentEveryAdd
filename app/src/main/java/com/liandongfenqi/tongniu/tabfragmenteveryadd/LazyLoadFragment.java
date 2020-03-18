@@ -2,8 +2,8 @@ package com.liandongfenqi.tongniu.tabfragmenteveryadd;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import butterknife.ButterKnife;
+import butterknife.Unbinder;
 
 /**
  * Created by tongniu on 2017/8/11.
@@ -25,14 +26,14 @@ public abstract class LazyLoadFragment extends Fragment {
     protected final String TAG = "LazyLoadFragment";
     public View view;
     public Activity activity;
-
+    Unbinder unbinder;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(setContentView(), container, false);
         isInit = true;
         /**初始化的时候去加载数据**/
-        ButterKnife.bind(this, view);
+        unbinder = ButterKnife.bind(this, view);
         activity = getActivity();
         isCanLoadData();
         return view;
@@ -76,7 +77,7 @@ public abstract class LazyLoadFragment extends Fragment {
         super.onDestroyView();
         isInit = false;
         isLoad = false;
-        ButterKnife.unbind(this);
+        unbinder.unbind();
     }
 
     protected void showToast(String message) {

@@ -2,8 +2,8 @@ package com.liandongfenqi.tongniu.tabfragmenteveryadd;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
@@ -18,7 +18,7 @@ import com.liandongfenqi.tongniu.tabfragmenteveryadd.view.SlideLayout;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import ezy.ui.view.BannerView;
 
@@ -27,10 +27,16 @@ import ezy.ui.view.BannerView;
  */
 
 public class ScrollViewMainActivity extends AppCompatActivity implements OnScrollListener {
-    @Bind(R.id.banner1)
+    @BindView(R.id.banner1)
     BannerView banner1;
+    @BindView(R.id.iamge)
+    ImageView iamge;
+    @BindView(R.id.scrollView)
+    MyScrollView scrollView;
+    @BindView(R.id.parent_layout)
+    LinearLayout parentLayout;
     /* * 自定义的MyScrollView
-         */
+     */
     private MyScrollView myScrollView;
     /**
      * 在MyScrollView里面的购买布局
@@ -97,7 +103,7 @@ public class ScrollViewMainActivity extends AppCompatActivity implements OnScrol
             public View create(BannerItem bannerItem, int position, ViewGroup container) {
                 ImageView iv = new ImageView(container.getContext());
 
-               /* Glide.with(container.getContext().getApplicationContext()).load(bannerItem.image).into(iv);*/
+                /* Glide.with(container.getContext().getApplicationContext()).load(bannerItem.image).into(iv);*/
                 Glide.with(container.getContext().getApplicationContext())
                         .load(bannerItem.image)
                         .into(iv);
