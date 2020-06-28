@@ -5,10 +5,9 @@
         <!-- Customize your theme here. -->
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
-        <item name="android:windowContentTransitions">true</item>
-    <!--    <item name="colorPrimary">@android:color/darker_gray</item>
+        <item name="colorPrimary">@android:color/darker_gray</item>
         <item name="colorPrimaryDark">@color/colro</item>
-        <item name="colorAccent">@color/colorAccent</item>-->
+        <item name="colorAccent">@color/colorAccent</item>
     </style>
     <style name="ImageTranslucentTheme" parent="AppTheme">
         <!--在Android 4.4之前的版本上运行，直接跟随系统主题-->

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:background="@android:color/white"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#e4e4e4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#e4e4e4"/>
+
+        <gov.anzong.lunzi.view.CursorTextView
+            android:id="@+id/province_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:maxLength="1"
+            android:textColor="#333333"
+            android:textSize="24dp"
+            app:ctv_cursorColor="#d8d8d8"
+            app:ctv_cursorHeight="38dp"
+            app:ctv_cursorMarginLeft="8dp"
+            app:ctv_cursorWidth="2dp"
+            />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#e4e4e4"/>
+
+        <gov.anzong.lunzi.view.CursorTextView
+            android:id="@+id/city_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:ctv_cursorColor="#d8d8d8"
+            android:maxLength="1"
+            android:gravity="center"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColor="#333333"
+            android:textSize="24dp"
+            app:ctv_cursorHeight="38dp"
+            app:ctv_cursorMarginLeft="8dp"
+            app:ctv_cursorWidth="2dp"
+            />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#e4e4e4"/>
+
+        <gov.anzong.lunzi.view.CursorTextView
+            android:id="@+id/number_pos_1_tv"
+            android:layout_width="0dp"
+            android:maxLength="1"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textSize="24dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:ctv_cursorColor="#d8d8d8"
+            app:ctv_cursorHeight="38dp"
+            app:ctv_cursorMarginLeft="8dp"
+            app:ctv_cursorWidth="2dp"
+            />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#e4e4e4"/>
+
+        <gov.anzong.lunzi.view.CursorTextView
+            android:id="@+id/number_pos_2_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:maxLength="1"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textSize="24dp"
+            android:layout_weight="1"
+            app:ctv_cursorColor="#d8d8d8"
+            app:ctv_cursorHeight="38dp"
+            app:ctv_cursorMarginLeft="8dp"
+            app:ctv_cursorWidth="2dp"
+            />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#e4e4e4"/>
+
+        <gov.anzong.lunzi.view.CursorTextView
+            android:id="@+id/number_pos_3_tv"
+            android:layout_width="0dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:ctv_cursorColor="#d8d8d8"
+            android:maxLength="1"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textSize="24dp"
+            app:ctv_cursorHeight="38dp"
+            app:ctv_cursorMarginLeft="8dp"
+            app:ctv_cursorWidth="2dp"
+            />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#e4e4e4"/>
+
+        <gov.anzong.lunzi.view.CursorTextView
+            android:id="@+id/number_pos_4_tv"
+            android:layout_width="0dp"
+            android:maxLength="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textSize="24dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:ctv_cursorColor="#d8d8d8"
+            app:ctv_cursorHeight="38dp"
+            app:ctv_cursorMarginLeft="8dp"
+            app:ctv_cursorWidth="2dp"
+            />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#e4e4e4"/>
+
+        <gov.anzong.lunzi.view.CursorTextView
+            android:id="@+id/number_pos_5_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:maxLength="1"
+            android:gravity="center"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColor="#333333"
+            android:textSize="24dp"
+            app:ctv_cursorColor="#d8d8d8"
+            app:ctv_cursorHeight="38dp"
+            app:ctv_cursorMarginLeft="8dp"
+            app:ctv_cursorWidth="2dp"
+            />
+
+        <View
+            android:id="@+id/divider_pos_6_view"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#e4e4e4"/>
+
+        <gov.anzong.lunzi.view.CursorTextView
+            android:id="@+id/number_pos_6_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:maxLength="1"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textSize="24dp"
+            app:ctv_cursorColor="#d8d8d8"
+            app:ctv_cursorHeight="38dp"
+            app:ctv_cursorMarginLeft="8dp"
+            app:ctv_cursorWidth="2dp"
+            />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#e4e4e4"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#e4e4e4"/>
+
+    <gov.anzong.lunzi.view.AddViewsLinearLayout
+        android:id="@+id/keyboard_key_view"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e4e4e4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="取消"
+            android:textColor="#666666"
+            android:textSize="14dp"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#e4e4e4"/>
+
+        <Button
+            android:id="@+id/confirm_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="确定"
+            android:textColor="#2483F9"
+            android:textSize="14dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -12,6 +12,7 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.liandongfenqi.tongniu.tabfragmenteveryadd.ui.GroupListListActivity;
 import com.liandongfenqi.tongniu.tabfragmenteveryadd.utils.StatusBarCompat;
 import com.youth.banner.Banner;
 import com.youth.banner.BannerConfig;

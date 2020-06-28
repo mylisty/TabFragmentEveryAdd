@@ -9,6 +9,10 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        packagingOptions {
+            //解决编译时com.android.builder.merge.DuplicateRelativeFileException: More than one file was found with OS independent path 'META-INF/rxjava.properties'这个错误
+            exclude 'META-INF/rxjava.properties'
+        }
     }
     buildTypes {
         release {
@@ -52,6 +56,8 @@ dependencies {
     implementation 'tv.danmaku.ijk.media:ijkplayer-armv5:0.8.2'
     implementation 'tv.danmaku.ijk.media:ijkplayer-x86:0.8.2'
 
-   // # ExoPlayer as IMediaPlayer: optional, experimental
+   // # ExoPlayer as IMediaPlayer: optional,
+
     implementation 'tv.danmaku.ijk.media:ijkplayer-exo:0.8.2'
+    implementation project(path: ':AnzongLunzi')
 }
